@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FiltroController">
+   <children>
+      <Label layoutX="156.0" layoutY="38.0" text="Filtrar Dados (Apenas uma opção)" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btResponsavel" layoutX="123.0" layoutY="311.0" mnemonicParsing="false" onAction="#onBtResponsavel" text="Responsável">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btPeriodo" layoutX="137.0" layoutY="197.0" mnemonicParsing="false" onAction="#onBtPeriodo" text="Período">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btData" layoutX="406.0" layoutY="311.0" mnemonicParsing="false" text="Data">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDtInicial" layoutX="97.0" layoutY="112.0" promptText="Data Inicial" />
+      <TextField fx:id="txtDtFinal" layoutX="97.0" layoutY="157.0" promptText="Data Final" />
+      <ChoiceBox fx:id="cbTipo" layoutX="355.0" layoutY="112.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="cbCondicao" layoutX="355.0" layoutY="157.0" prefWidth="150.0" />
+      <TextField fx:id="txtData" layoutX="356.0" layoutY="276.0" promptText="&quot;AA-mm-dd&quot;" />
+      <TextField fx:id="txtResponsavel" layoutX="97.0" layoutY="276.0" promptText="ex: Caroline" />
+      <ChoiceBox fx:id="cbForma" layoutX="355.0" layoutY="200.0" prefWidth="150.0" />
+      <Label layoutX="310.0" layoutY="116.0" text="Tipo" />
+      <Label layoutX="297.0" layoutY="161.0" text="Condição" />
+      <Label layoutX="305.0" layoutY="204.0" text="Forma" />
+      <Button fx:id="btOkTipo" layoutX="516.0" layoutY="112.0" mnemonicParsing="false" onAction="#onBtOkTipo" text="OK" />
+      <Button fx:id="btOkCond" layoutX="516.0" layoutY="157.0" mnemonicParsing="false" onAction="#onBtOkCond" text="OK" />
+      <Button fx:id="btOkForma" layoutX="516.0" layoutY="200.0" mnemonicParsing="false" onAction="#onBtOkForma" text="OK" />
+   </children>
+</AnchorPane>
